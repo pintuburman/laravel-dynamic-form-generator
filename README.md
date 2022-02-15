@@ -22,6 +22,12 @@ This is a simple laravel 8 Form Generator app.
 9. php artisan db:seed
 10. php artisan serve (if the server opens up, http://127.0.0.1:8000,  then we are good to go)
 
+## Admin Login credentials
+Url: http://127.0.0.1:8000/login
+
+Username: admin@admin.com
+Password: password
+
 ## Operations
 1. Create Form
 2. View a Form
