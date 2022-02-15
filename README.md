@@ -25,8 +25,8 @@ This is a simple laravel 8 Form Generator app.
 ## Admin Login credentials
 Url: http://127.0.0.1:8000/login
 
-Username: admin@admin.com
-Password: password
+<p>Username: admin@admin.com<p>
+<p>Password: password</p>
 
 ## Operations
 1. Create Form
