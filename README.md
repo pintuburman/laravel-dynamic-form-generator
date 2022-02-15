@@ -1,19 +1,19 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 ## Laravel Dynamic Form Generator
-This is a simple laravel 8 Form Generator app.
+This is a simple laravel 8 Dynamic Form Generator app.
 
 ## How to install and run on your local system
 1. git clone https://github.com/pintuburman/laravel_dynamic_form_generator.git
 2. cd laravel_dynamic_form_generator/
 3. composer install
 4. npm install
-5. cp .env.example .env
+5. **cp .env.example .env** (Note: In windows use this command **copy .env.example .env**)
 6. php artisan key:generate
 7. Add your database config in the .env file
-8. php artisan migrate (Note: Make sure phpmyadmin Apache and Mysql is started)
+8. php artisan migrate (Note: Make sure phpmyadmin **Apache and Mysql** is started)
 9. php artisan db:seed
-10. php artisan serve (if the server opens up, http://127.0.0.1:8000,  then we are good to go)
+10. php artisan serve (if the server opens up, **http://127.0.0.1:8000,**  then we are good to go)
 
 ## Admin Login credentials
 Url: http://127.0.0.1:8000/login
