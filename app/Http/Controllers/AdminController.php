@@ -18,48 +18,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $forms = AllForm::orderBy('id', 'desc')->paginate(10);
-
-        
-
-        /*foreach($forms as $form){
-            echo '<form>';
-            foreach($form->schema as $schema){
-                echo '<div class="form-group">';
-                echo '<label class="form-label">'.$schema->label.'</label>';
-
-                if($schema->type == 'text'){
-                    echo '<input class="form-control" type="text" name="'.$schema->name.'">';
-                }else if($schema->type == 'number'){
-                    echo '<input class="form-control" type="number" name="'.$schema->name.'">';
-                }else if($schema->type == 'select'){
-                    echo '<select class="form-control" name="'.$schema->name.'">';
-                    foreach($schema->SchemaMeta as $meta){
-                        echo '<option value="'.$meta->val.'">'.$meta->text.'</option>';
-                    }
-                    echo '</select>';
-                }
-                echo '</div>';
-            }
-            echo '<button class="btn btn-primary" type="submit">Submit</button>';
-            echo '</form>';
-        }
-
-    
-        die();*/
-
-        return view('home', compact('forms'));
+        return view('home');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -69,16 +30,10 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-
-        //dd($request->all());
-
         $fieldSet  =$request->input('fieldSet');
 
         $form = AllForm::create();
         $lastId = $form->id;
-
-        // echo $lastId;
-        // die();
 
         foreach($fieldSet as $field){
 
@@ -106,22 +61,6 @@ class AdminController extends Controller
 
         }
 
-
-        // $request->validate([
-        //     'name' => 'required|min:3',
-        //     'phone' => 'numeric|required|min:10',
-        //     'gender' => 'required',
-        // ]);
-
-        // $data = [
-        //     'name' => $request->input('name'),
-        //     'phone' => $request->input('phone'),
-        //     'gender' => ($request->input('gender') != 'Other') ? $request->input('gender') : $request->input('otherGender'),
-        //     'gender_other_flag' => ($request->input('gender') == 'Other') ? 1 : 0
-        // ];
-
-        // User::create($data);
-
         return redirect()->back()->with('success', 'Form created successfully.');
     }
 
@@ -135,17 +74,6 @@ class AdminController extends Controller
     {
         $form = AllForm::find($id);
         return view('formEdit',compact('form'));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
     }
 
     /**
