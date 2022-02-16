@@ -18,7 +18,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $forms = AllForm::orderBy('id', 'desc')->paginate(10);
+        return view('home',compact('forms'));
     }
 
 
