@@ -28,6 +28,10 @@ Url: http://127.0.0.1:8000/login
 ![plot](./public/step2.png)
 
 2. View a Form
+![plot](./public/step5.png)
 3. Edit a Form
+![plot](./public/step4.png)
 4. Delete a Form
+![plot](./public/step3.png)
 5. View all Forms
+![plot](./public/step3.png)
