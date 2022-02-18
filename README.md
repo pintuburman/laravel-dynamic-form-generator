@@ -22,17 +22,17 @@ Url: http://127.0.0.1:8000/login
 <p>Password: password</p>
 
 ## Operations
-# 1. Create Form
+## 1. Create Form
 
 ![plot](./public/step1.png)
 ![plot](./public/step2.png)
 
-# 2. View a Form
+## 2. View a Form
 ![plot](./public/step5.png)
 
-# 3. Edit a Form
+## 3. Edit a Form
 ![plot](./public/step4.png)
-# 4. Delete a Form
+## 4. Delete a Form
 ![plot](./public/step3.png)
-# 5. View all Forms
+## 5. View all Forms
 ![plot](./public/step5.png)
