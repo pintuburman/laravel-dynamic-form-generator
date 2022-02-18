@@ -34,4 +34,4 @@ Url: http://127.0.0.1:8000/login
 4. Delete a Form
 ![plot](./public/step3.png)
 5. View all Forms
-![plot](./public/step3.png)
+![plot](./public/step5.png)
