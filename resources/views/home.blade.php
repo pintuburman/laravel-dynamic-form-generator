@@ -351,5 +351,12 @@ $(document).on('click', ".DeleteField", function(e) {
     $(this).closest('section').remove();
     x--;
 });
+
+$(document).on('click','.DelteOption',function(e){
+    e.stopPropagation();
+    $(this).closest('tr').remove();
+    pos--;
+    console.log(pos);
+});
 </script>
 @stop
