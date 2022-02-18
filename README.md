@@ -23,6 +23,9 @@ Url: http://127.0.0.1:8000/login
 
 ## Operations
 1. Create Form
+
+![plot](./public/step1.png)
+
 2. View a Form
 3. Edit a Form
 4. Delete a Form
