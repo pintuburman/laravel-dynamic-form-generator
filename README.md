@@ -25,6 +25,7 @@ Url: http://127.0.0.1:8000/login
 1. Create Form
 
 ![plot](./public/step1.png)
+![plot](./public/step2.png)
 
 2. View a Form
 3. Edit a Form
